@@ -57,7 +57,7 @@ shell_exec("cp $previous_install/dbs/* zipit/dbs");
 // remove zipit install file
 shell_exec("rm ./zipit-update.php");
 
-file_put_contents($progress_file,"<link href='../$previous_install/css/style.css' rel='stylesheet' type='text/css'><br/><center><button type='button' name='btnClose' value='OK' class='css3button' onclick='parent.location.reload();'>Zipit Updated! Click to Close</button></center>");  
+file_put_contents($progress_file,"<link href='../$previous_install/css/style.css' rel='stylesheet' type='text/css'><br/><center><button type='button' name='btnClose' value='OK' class='css3button' onclick='window.top.location='index.php';'>Zipit Updated! Click to Close</button></center>");  
       sleep(3);
 // remove progress file
 shell_exec("rm $progress_file");
