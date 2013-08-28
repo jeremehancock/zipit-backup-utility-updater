@@ -20,7 +20,7 @@ chdir("../");
       $previous_install = "zipit_backed_up_$date";
       shell_exec("mv zipit $previous_install");
 // update progress file
-   file_put_contents($progress_file,"<link href='../$previous_install/css/style.css' rel='stylesheet' type='text/css'><br/><center>Backing up current install...<br/><img src='../$previous_install/images/progress.gif'/></center>");
+   file_put_contents($progress_file,"<link href='../$previous_install/css/style.css' rel='stylesheet' type='text/css'><br/><center>Backing up current install...<br/><img src='https://raw.github.com/jeremehancock/zipit-backup-utility/master/images/progress.gif/></center>");
 
 // sleep for 3 seconds. This helps make the progress more aesthetic for smaller sites where the process would run so fast you couldn't see what happened.
    sleep(3);
@@ -28,7 +28,7 @@ chdir("../");
    }
 
 // update progress file
-   file_put_contents($progress_file,"<link href='../$previous_install/css/style.css' rel='stylesheet' type='text/css'><br/><center>Getting latest version...<br/><img src='../$previous_install/images/progress.gif'/></center>");
+   file_put_contents($progress_file,"<link href='../$previous_install/css/style.css' rel='stylesheet' type='text/css'><br/><center>Getting latest version...<br/><img src='https://raw.github.com/jeremehancock/zipit-backup-utility/master/images/progress.gif/></center>");
 
 // sleep for 3 seconds. This helps make the progress more aesthetic for smaller sites where the process would run so fast you couldn't see what happened.
    sleep(3);
@@ -37,7 +37,7 @@ chdir("../");
 shell_exec('wget https://github.com/jeremehancock/zipit-backup-utility/archive/master.zip --no-check-certificate -O zipit.zip; unzip zipit.zip; mv zipit-backup-utility-master* zipit; rm zipit.zip');
 
 // update progress file
-   file_put_contents($progress_file,"<link href='../$previous_install/css/style.css' rel='stylesheet' type='text/css'><br/><center>Setting up configuration...<br/><img src='../$previous_install/images/progress.gif'/></center>");
+   file_put_contents($progress_file,"<link href='../$previous_install/css/style.css' rel='stylesheet' type='text/css'><br/><center>Setting up configuration...<br/><img src='https://raw.github.com/jeremehancock/zipit-backup-utility/master/images/progress.gif/></center>");
 
 // sleep for 3 seconds. This helps make the progress more aesthetic for smaller sites where the process would run so fast you couldn't see what happened.
    sleep(3);
@@ -46,7 +46,7 @@ shell_exec("cp $previous_install/zipit-config.php zipit/zipit-config.php");
 
 
 // update progress file
-   file_put_contents($progress_file,"<link href='../$previous_install/css/style.css' rel='stylesheet' type='text/css'><br/><center>Setting up db configs...<br/><img src='../$previous_install/images/progress.gif'/></center>");
+   file_put_contents($progress_file,"<link href='../$previous_install/css/style.css' rel='stylesheet' type='text/css'><br/><center>Setting up db configs...<br/><img src='https://raw.github.com/jeremehancock/zipit-backup-utility/master/images/progress.gif/></center>");
 
 // sleep for 3 seconds. This helps make the progress more aesthetic for smaller sites where the process would run so fast you couldn't see what happened.
    sleep(3);
